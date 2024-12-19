@@ -1,8 +1,8 @@
-al 00820B .not_240
+al 008210 .not_240
 al 00819A .nmi_go
 al 000006 .scroll_y
 al 000005 .palette_init
-al 0081F4 .game_loop
+al 0081F9 .game_loop
 al 000004 .nmi_ready
 al 008152 .clear_ram_loop
 al 00E010 .palette_sprites
