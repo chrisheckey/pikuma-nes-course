@@ -1,5 +1,5 @@
 .linecont       +               ; Allow line continuations
-.feature        c_comments      /* allow this style of comment */
+.feature        c_comments
 
 .segment "IMG"
 .incbin "../img/HelloWorld.chr"
