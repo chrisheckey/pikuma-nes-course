@@ -18,10 +18,10 @@ nmi:
     ; call the oam dma with a macro
     jsr oam_dma
 
-    printf_nmi "HELLO NELSON", 80, 96
+    printf_nmi "HELLO CHRBHNKLY", 80, 40
 
     lda PPU_STATUS ; $2002
-
+    
     set PPU_SCROLL, #0
     set PPU_SCROLL, scroll_y
 

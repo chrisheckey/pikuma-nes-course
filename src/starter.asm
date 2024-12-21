@@ -23,12 +23,12 @@ game_loop:
 
     set nmi_ready, #1
 
-    inc scroll_y
+    dec scroll_y
     lda scroll_y
     
-    cmp #240
-    bne not_240
+    cmp #15
+    bne not_15
         set scroll_y, #0
-    not_240:
+    not_15:
 
     jmp game_loop
