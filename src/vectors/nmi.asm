@@ -19,7 +19,7 @@ nmi:
     ; call the oam dma with a macro
     jsr oam_dma
 
-    printf_nmi "TACO MATRIX", 142, 16
+    printf_nmi_rjust "TACO MATRIX POWER", 16
 
     lda PPU_STATUS ; $2002
     
