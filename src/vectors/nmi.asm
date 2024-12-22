@@ -25,8 +25,6 @@ nmi:
     
     set PPU_SCROLL, #0
     set PPU_SCROLL, scroll_y
-
-    set PPU_SCROLL, #0
     set PPU_SCROLL, scroll_x
 
     set nmi_ready, #0
