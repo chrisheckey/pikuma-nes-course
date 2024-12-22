@@ -64,8 +64,8 @@
     .local BYTE_OFFSET_HI
     .local BYTE_OFFSET_LO
     
-    ROW = YPOS / 8 ; 128 / 8 = 16 
-    COL = 256 - .strlen(STRING) * 8 / 8 ; 32 /  8  = 4
+    ROW = YPOS / 8 ; pos in pixels divided by pixel per char
+    COL = 256 - .strlen(STRING) * 8 / 8 ; Calculate from right side to x pos of string
     BYTE_OFFSET_HI = (ROW * 32 + COL) / 256 + 32 ; (16 * 32 + 4) / 256 + 20
     BYTE_OFFSET_LO = (ROW * 32 + COL) .mod 256
 
