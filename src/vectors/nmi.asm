@@ -2,6 +2,7 @@
     nmi_ready: .res 1
     palette_init: .res 1
     scroll_y: .res 1
+    scroll_x: .res 1
 
 .segment "CODE"
 
@@ -24,6 +25,7 @@ nmi:
     
     set PPU_SCROLL, #0
     set PPU_SCROLL, scroll_y
+    set PPU_SCROLL, scroll_x
 
     set nmi_ready, #0
 

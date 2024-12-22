@@ -36,6 +36,20 @@ game_loop:
         dec scroll_y
         dec scroll_y
     down_press:
+  
+    lda gamepad_press
+    and PRESS_LEFT
+    beq left_press
+        dec scroll_x
+        dec scroll_x
+    left_press:
+
+    lda gamepad_press
+    and PRESS_RIGHT
+    beq right_press
+        inc scroll_x
+        inc scroll_x
+    right_press:
     
     /*
     lda scroll_y  ; Load scroll_y into accumulator
