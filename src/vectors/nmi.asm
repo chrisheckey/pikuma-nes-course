@@ -19,12 +19,14 @@ nmi:
     ; call the oam dma with a macro
     jsr oam_dma
 
-    printf_nmi "HELLO CHRBHNKLY", 142, 16
+    printf_nmi "TACO MATRIX", 142, 16
 
     lda PPU_STATUS ; $2002
     
     set PPU_SCROLL, #0
     set PPU_SCROLL, scroll_y
+
+    set PPU_SCROLL, #0
     set PPU_SCROLL, scroll_x
 
     set nmi_ready, #0
