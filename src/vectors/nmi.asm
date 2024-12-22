@@ -19,7 +19,7 @@ nmi:
     ; call the oam dma with a macro
     jsr oam_dma
 
-    printf_nmi "HELLO CHRBHNKLY", 80, 40
+    printf_nmi "HELLO CHRBHNKLY", 142, 16
 
     lda PPU_STATUS ; $2002
     
