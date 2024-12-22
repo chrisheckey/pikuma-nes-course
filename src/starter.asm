@@ -40,15 +40,15 @@ game_loop:
     lda gamepad_press
     and PRESS_LEFT
     beq left_press
-        dec scroll_x
-        dec scroll_x
+        inc scroll_x
+        inc scroll_x
     left_press:
 
     lda gamepad_press
     and PRESS_RIGHT
     beq right_press
-        inc scroll_x
-        inc scroll_x
+        dec scroll_x
+        dec scroll_x
     right_press:
     
     /*
